@@ -49,6 +49,8 @@ def main():
             else:
                 discount = 0
             if(total >= 3000):
+                extraDiscount = total * 0.05
+                discount += extraDiscount
                 total = total-(total*0.05)
             print('TOTAL_DISCOUNT '+str("%.2f" % discount))
             total = total+(total*0.1)
